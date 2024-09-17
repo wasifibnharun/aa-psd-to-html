@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap');
+/* Google font link */
+
+/* ----------------------------------------------------- */
+
+/* Common CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a, a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+img {
+    vertical-align: middle;
+    /* width: 100%; */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+}
+
+p {
+    margin: 0;
+}
+
+:root {
+    --color1: #5bc5f4;
+    --color2: #0872b9;
+    --font1: "Oswald", sans-serif;
+    --font2: "Open Sans", sans-serif;
+}
+
+/* Common CSS End */
+
+/* Welcome Area */
+.welcomePart {
+    background-color: var(--color2);
+    color: #e7e7e7;
+}
+
+.welcomeIcon li a i {
+    color: white;
+}
+
+.welcomeIcon li a i:hover {
+    color: #353535;
+}
+/* Welcome Area End*/
+
+/* ---------------------------------------------- */
+
+/* Menu Area */
+.nav-link:hover, .active:hover {
+    color: var(--color2) !important;
+}
+/* Menu Area End */
+
+/* ---------------------------------------------- */
+
+/* Hero Area Start */
+.heroPart {
+    background: url(../img/hero-bg.png) no-repeat center;
+    background-size: cover;
+    padding: 150px 0;
+}
+
+.heroCon h2 {
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.heroCon h1 {
+    font-size: 56px;
+}
+
+.heroCon p {
+    font-size: 18px;
+}
+
+.heroBtn a {
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 0;
+    font-family: var(--font1);
+}
+
+.heroBtn a:hover {
+    background: var(--color2);
+    border-color: var(--color2);
+}
+/* Hero Area end */
+
+/* About Area start */
+.line-1 {
+    height: 1px;
+    width: 47px;
+    background: var(--color2);
+}
+
+.line-2 {
+    height: 1px;
+    width: 3px;
+    background: var(--color2);
+}
+
+.line-3 {
+    height: 1px;
+    width: 2px;
+    background: var(--color2);
+}
+
+.line-4 {
+    height: 1px;
+    width: 1px;
+    background: var(--color2);
+}
+
+.headline h3 {
+    font-size: 30px;
+    color: #353535;
+    font-weight: 800;
+    line-height: 24px;
+}
+
+.headline {
+    padding-bottom: 40px;
+}
+
+.aboutCon p {
+    font-size: 16px;
+    color: #555;
+}
+/* About Area end */
+
+/* Service Area start */
+.serviceCon {
+    background: #f1f1f1;
+    transition: 0.3s;
+    /* padding: 20px 20px 18px 20px; */
+}
+
+.serviceCon:hover {
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+}
+
+.serviceIcon {
+    height: 80px; 
+    width: 80px;
+    border-radius: 50%;
+    background: #f1f1f1;
+    border: 8px double white;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.3s;
+}
+
+.serviceCon:hover .serviceIcon {
+    background: var(--color1);
+}
+/* Service Area end */
+
+/* Portfolio Area start */
+.portfolioOverlay {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.portfolioOverlay a {
+    color: white;
+    height: 40px;
+    width: 40px;
+    background: var(--color1);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+}
+
+.portfolioImg:hover .portfolioOverlay {
+    visibility: visible;
+    opacity: 1;
+}
+/* Portfolio Area end */
+
+/* Team Area start */
+.teamImgOverlay {
+    height: 100%;
+    width: 33%;
+    background: rgba(0, 0, 0, 0.6);
+    top: 0;
+    right: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.teamImgOverlay ul li a{
+    height: 40px;
+    width: 40px;
+    color: white;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 50%;
+    display: block;
+    line-height: 38px;
+    margin: 15px 0;
+    transition: 0.4s;
+}
+
+.teamImgOverlay ul li a:hover {
+    background: var(--color1);
+    border-color: var(--color1);
+}
+
+.teamImg:hover .teamImgOverlay {
+    visibility: visible;
+    opacity: 1;
+}
+
+.teamImg {
+    transition: 0.4s;
+}
+
+.teamImg:hover {
+    box-shadow: 0 0 22px rgba(0, 0, 0, 0.26);
+}
+
+.teamImg:hover ~ h3{
+    color: var(--color1);
+}
+/* Team Area end */
+
+/* Testimonial Area start */
+.testimonialCon {
+    background: #f1f1f1;
+}
+
+.testimonialCon h6 {
+    text-transform: none;
+    font-size: 16px;
+}
+
+.testimonialCon ul li {
+    color: var(--color1);
+}
+
+.triangle {
+    height: 40px;
+    width: 40px;
+    background: #f1f1f1;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    padding-bottom: 10px;
+}
+/* Testimonial Area end */
+
+/* Footer Area start */
+.footerPart {
+    background: #353535;
+    color: white;
+}
+
+.footerPart h4 {
+    text-transform: none;
+}
+
+.footerIcons ul {
+    padding-top: 30px;
+}
+
+.footerIcons ul li i {
+    color: white;
+    background: var(--color1);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.leftLinks li {
+    padding-bottom: 15px;
+}
+
+.leftLinks li a {
+    color: white;
+}
+
+.leftLinks li a:hover {
+    color: var(--color1);
+}
+
+.rightLinks li {
+    padding-bottom: 15px;
+}
+
+.rightLinks li a {
+    color: white;
+}
+
+.rightLinks li a:hover {
+    color: var(--color1);
+}
+/* Footer Area end */
