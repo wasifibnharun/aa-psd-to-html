@@ -28,7 +28,7 @@
     </div>
 
     <!-- Welcome Area -->
-     <div class="welcomePart py-2">
+      <div class="welcomePart py-2">
         <div class="container container-fluid">
             <div class="welcomeConM">
                 <div class="row gy-2">
@@ -47,13 +47,13 @@
                 </div>
             </div>
         </div>
-     </div>
+      </div>
     <!-- Welcome Area End -->
 
     <!-- ------------------------------------------------------------- -->
     
     <!-- Menu Area -->
-    <nav class="navbar navbar-expand-lg">
+      <nav class="navbar navbar-expand-lg">
         <div class="container container-fluid">
           <a class="navbar-brand" href="#">
             <div class="bLogo">
@@ -89,7 +89,7 @@
             </ul>
           </div>
         </div>
-    </nav>
+      </nav>
     <!-- Menu Area End -->
 
     <!-- ------------------------------------------------------------- -->
@@ -134,13 +134,13 @@
             </div>
           </div>
           <div class="aboutConM">
-            <div class="row align-items-center">
-              <div class="col-5">
+            <div class="row align-items-center gy-4">
+              <div class="col-md-5">
                 <div class="aboutImg">
-                  <img  src="assets/img/about.png">
+                  <img class="w-100" src="assets/img/about.png">
                 </div>
               </div>
-              <div class="col-7">
+              <div class="col-md-7">
                 <div class="aboutCon animate__animated animate__fadeInRight wow">
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor ididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
@@ -170,8 +170,8 @@
             </div>
           </div>
           <div class="serviceConM pt-4">
-            <div class="row">
-              <div class="col-4">
+            <div class="row gy-5">
+              <div class="col-md-4 col-sm-6">
                 <div class="serviceCon p-4 pt-5 text-center position-relative animate__animated animate__fadeInLeft wow">
                   <div class="serviceIcon d-flex justify-content-center align-items-center position-absolute">
                     <img src="assets/img/service-icon-1.png">
@@ -180,7 +180,7 @@
                   <p>Lorem ipsum dolor sit amet, consectetpisg elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
               </div>
-              <div class="col-4">
+              <div class="col-md-4 col-sm-6">
                 <div class="serviceCon p-4 pt-5 text-center position-relative animate__animated animate__fadeInUp wow">
                   <div class="serviceIcon d-flex justify-content-center align-items-center position-absolute">
                     <img src="assets/img/service-icon-2.png">
@@ -189,7 +189,7 @@
                   <p>Lorem ipsum dolor sit amet, consectetpisg elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
               </div>
-              <div class="col-4">
+              <div class="col-md-4">
                 <div class="serviceCon p-4 pt-5 text-center position-relative animate__animated animate__fadeInRight wow">
                   <div class="serviceIcon d-flex justify-content-center align-items-center position-absolute">
                     <img src="assets/img/service-icon-3.png">
@@ -222,8 +222,8 @@
           </div>
 
           <div class="portfolioConM">
-            <div class="row">
-              <div class="col-3">
+            <div class="row gy-4">
+              <div class="col-md-3 col-sm-6">
                 
                 <div class="portfolioCon animate__animated animate__zoomIn wow">
                   <div class="portfolioImg position-relative">
@@ -247,7 +247,7 @@
 
               </div>
 
-              <div class="col-3">
+              <div class="col-md-3 col-sm-6">
 
                 <div class="portfolioCon animate__animated animate__zoomIn wow">
                   <div class="portfolioImg position-relative">
@@ -271,7 +271,7 @@
 
               </div>
 
-              <div class="col-3">
+              <div class="col-md-3 col-sm-6">
 
                 <div class="portfolioCon animate__animated animate__zoomIn wow">
                   <div class="portfolioImg position-relative">
@@ -295,7 +295,7 @@
 
               </div>
 
-              <div class="col-3">
+              <div class="col-md-3 col-sm-6">
 
                 <div class="portfolioCon animate__animated animate__zoomIn wow">
                   <div class="portfolioImg position-relative">
@@ -344,7 +344,7 @@
 
           <div class="teamConM">
 
-            <div class="filterBtnM d-flex gap-2 justify-content-center mb-4">
+            <div class="filterBtnM d-none d-sm-flex gap-2 justify-content-center mb-4">
               <div class="btn btn-primary" data-filter="all">All</div>
               <div class="btn btn-primary" data-filter=".web">Web Designer</div>
               <div class="btn btn-primary" data-filter=".ui">UX Designer</div>
@@ -352,8 +352,21 @@
               <div class="btn btn-primary" data-filter=".dm">Digital Marketer</div>
             </div>
 
-            <div class="row mixitupContainer">
-              <div class="col-3 animate__animated animate__fadeInUp wow web mix">
+            <div class="dropdown d-flex justify-content-center mb-4 d-sm-none">
+              <button class="btn btn-primary dropdown-toggle filterDropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Filters
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="filterDropdown">
+                <li><a class="dropdown-item" data-filter="all">All</a></li>
+                <li><a class="dropdown-item" data-filter=".web">Web Designer</a></li>
+                <li><a class="dropdown-item" data-filter=".ui">UX Designer</a></li>
+                <li><a class="dropdown-item" data-filter=".ux">UI Designer</a></li>
+                <li><a class="dropdown-item" data-filter=".dm">Digital Marketer</a></li>
+              </ul>
+            </div>
+
+            <div class="row gy-4 mixitupContainer">
+              <div class="col-md-3 col-sm-6 animate__animated animate__fadeInUp wow web mix">
                 <div class="teamCon text-center">
                   <div class="teamImg mb-3 position-relative">
                     <img src="assets/img/team-img.png" class="w-100" alt="">
@@ -371,7 +384,7 @@
                 </div>
               </div>
 
-              <div class="col-3 animate__animated animate__fadeInUp wow ui mix">
+              <div class="col-md-3 col-sm-6 animate__animated animate__fadeInUp wow ui mix">
                 <div class="teamCon text-center">
                   <div class="teamImg mb-3 position-relative">
                     <img src="assets/img/team-img-2.png" class="w-100" alt="">
@@ -389,10 +402,10 @@
                 </div>
               </div>
 
-              <div class="col-3 animate__animated animate__fadeInUp wow ux mix">
+              <div class="col-md-3 col-sm-6 animate__animated animate__fadeInUp wow ux mix">
                 <div class="teamCon text-center">
                   <div class="teamImg mb-3 position-relative">
-                    <img src="assets/img/team-img.png" class="w-100" alt="">
+                    <img src="assets/img/team-img-3.png" class="w-100" alt="">
                     <div class="teamImgOverlay position-absolute d-flex justify-content-center align-items-center">
                       <ul>
                         <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
@@ -407,7 +420,7 @@
                 </div>
               </div>
 
-              <div class="col-3 animate__animated animate__fadeInUp wow dm mix">
+              <div class="col-md-3 col-sm-6 animate__animated animate__fadeInUp wow dm mix">
                 <div class="teamCon text-center">
                   <div class="teamImg mb-3 position-relative">
                     <img src="assets/img/team-img-4.png" class="w-100" alt="">
@@ -452,43 +465,43 @@
             <div class="swiper-wrapper">
 
               <div class="swiper-slide animate__animated animate__fadeInLeft wow">
-                <div class="testimonialImg">
-                  <img src="assets/img/testimonial-icon.png" alt="">
-                </div>
-                
-                <div class="testimonialCon position-relative mt-5 p-4">
-                  <div class="triangle position-absolute"></div>
-                  <h4>Shahin Alom</h4>
-                  <ul class="d-flex gap-2 justify-content-center align-items-center">
-                    <li><i class="fa-solid fa-star"></i></li>
-                    <li><i class="fa-solid fa-star"></i></li>
-                    <li><i class="fa-solid fa-star"></i></li>
-                    <li><i class="fa-solid fa-star"></i></li>
-                    <li><i class="fa-solid fa-star-half"></i></li>
-                  </ul>
-                  <h6 class="mt-2">Chairman</h6>
-                  <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h6>
-                </div>
+                  <div class="testimonialImg">
+                    <img src="assets/img/testimonial-icon.png" alt="">
+                  </div>
+                  
+                  <div class="testimonialCon position-relative mt-5 p-4">
+                    <div class="triangle position-absolute"></div>
+                    <h4>Shahin Alom</h4>
+                    <ul class="d-flex gap-2 justify-content-center align-items-center">
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star-half"></i></li>
+                    </ul>
+                    <h6 class="mt-2">Chairman</h6>
+                    <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h6>
+                  </div>
               </div>
 
               <div class="swiper-slide animate__animated animate__fadeInRight wow">
-                <div class="testimonialImg">
-                  <img src="assets/img/testimonial-icon-2.png" alt="">
-                </div>
-                
-                <div class="testimonialCon position-relative mt-5 p-4">
-                  <div class="triangle position-absolute"></div>
-                  <h4>Mahadi Tahsan</h4>
-                  <ul class="d-flex gap-2 justify-content-center align-items-center">
-                    <li><i class="fa-solid fa-star"></i></li>
-                    <li><i class="fa-solid fa-star"></i></li>
-                    <li><i class="fa-solid fa-star"></i></li>
-                    <li><i class="fa-solid fa-star"></i></li>
-                    <li><i class="fa-solid fa-star-half"></i></li>
-                  </ul>
-                  <h6 class="mt-2">Executive Director</h6>
-                  <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h6>
-                </div>
+                  <div class="testimonialImg">
+                    <img src="assets/img/testimonial-icon-2.png" alt="">
+                  </div>
+                  
+                  <div class="testimonialCon position-relative mt-5 p-4">
+                    <div class="triangle position-absolute"></div>
+                    <h4>Mahadi Tahsan</h4>
+                    <ul class="d-flex gap-2 justify-content-center align-items-center">
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star-half"></i></li>
+                    </ul>
+                    <h6 class="mt-2">Executive Director</h6>
+                    <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h6>
+                  </div>
               </div>
 
               <div class="swiper-slide">
@@ -510,7 +523,7 @@
                   <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h6>
                 </div>
               </div>
-
+              
               <div class="swiper-slide">
                 <div class="testimonialImg">
                   <img src="assets/img/testimonial-icon-2.png" alt="">
@@ -532,43 +545,43 @@
               </div>
 
               <div class="swiper-slide">
-                <div class="testimonialImg">
-                  <img src="assets/img/testimonial-icon.png" alt="">
-                </div>
-                
-                <div class="testimonialCon position-relative mt-5 p-4">
-                  <div class="triangle position-absolute"></div>
-                  <h4>Shahin Alom</h4>
-                  <ul class="d-flex gap-2 justify-content-center align-items-center">
-                    <li><i class="fa-solid fa-star"></i></li>
-                    <li><i class="fa-solid fa-star"></i></li>
-                    <li><i class="fa-solid fa-star"></i></li>
-                    <li><i class="fa-solid fa-star"></i></li>
-                    <li><i class="fa-solid fa-star-half"></i></li>
-                  </ul>
-                  <h6 class="mt-2">Chairman</h6>
-                  <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h6>
-                </div>
+                  <div class="testimonialImg">
+                    <img src="assets/img/testimonial-icon.png" alt="">
+                  </div>
+                  
+                  <div class="testimonialCon position-relative mt-5 p-4">
+                    <div class="triangle position-absolute"></div>
+                    <h4>Shahin Alom</h4>
+                    <ul class="d-flex gap-2 justify-content-center align-items-center">
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star-half"></i></li>
+                    </ul>
+                    <h6 class="mt-2">Chairman</h6>
+                    <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h6>
+                  </div>
               </div>
 
               <div class="swiper-slide">
-                <div class="testimonialImg">
-                  <img src="assets/img/testimonial-icon-2.png" alt="">
-                </div>
-                
-                <div class="testimonialCon position-relative mt-5 p-4">
-                  <div class="triangle position-absolute"></div>
-                  <h4>Mahadi Tahsan</h4>
-                  <ul class="d-flex gap-2 justify-content-center align-items-center">
-                    <li><i class="fa-solid fa-star"></i></li>
-                    <li><i class="fa-solid fa-star"></i></li>
-                    <li><i class="fa-solid fa-star"></i></li>
-                    <li><i class="fa-solid fa-star"></i></li>
-                    <li><i class="fa-solid fa-star-half"></i></li>
-                  </ul>
-                  <h6 class="mt-2">Executive Director</h6>
-                  <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h6>
-                </div>
+                  <div class="testimonialImg">
+                    <img src="assets/img/testimonial-icon-2.png" alt="">
+                  </div>
+                  
+                  <div class="testimonialCon position-relative mt-5 p-4">
+                    <div class="triangle position-absolute"></div>
+                    <h4>Mahadi Tahsan</h4>
+                    <ul class="d-flex gap-2 justify-content-center align-items-center">
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star-half"></i></li>
+                    </ul>
+                    <h6 class="mt-2">Executive Director</h6>
+                    <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h6>
+                  </div>
               </div>
 
             </div>
@@ -586,17 +599,17 @@
       <div class="footerPart mt-5 py-4">
         <div class="container">
           <div class="footerCon">
-            <div class="row">
-              <div class="col-3">
+            <div class="row gy-4">
+              <div class="col-xl-3 col-lg-4 col-md-6 col-sm-5">
                 <div class="footerLogo pb-4">
                   <img src="assets/img/logo-white.png" alt="">
                 </div>
-                <p class="text-white pb-4">Lorem ipsum dolor sit amet, conser adipisicing elit, sed do eiumod apor incididunt ut labore et dolore magna aliqua.</p>
-                <p class="text-white pb-4">Lorem ipsum dolor sit amet, conser adipisicing elit.</p>
+                <p class="text-white text-sm-start text-center pb-4">Lorem ipsum dolor sit amet, conser adipisicing elit, sed do eiumod apor incididunt ut labore et dolore magna aliqua.</p>
+                <p class="text-white text-sm-start text-center pb-4">Lorem ipsum dolor sit amet, conser adipisicing elit.</p>
               </div>
 
-              <div class="col-3" id="contact">
-                <h4>Contact Us</h4>
+              <div class="col-xl-3 col-lg-5 col-md-6 col-sm-7" id="contact">
+                <h4 class="text-sm-start text-center">Contact Us</h4>
                 <div class="footerIcons">
                   <ul>
                     <li class="d-flex gap-3 justify-content-start align-items-center">
@@ -626,9 +639,9 @@
                 </div>
               </div>
 
-              <div class="col-2">
-                <h4>Important Links</h4>
-                <div class="footerLinks d-flex gap-3 justify-content-start">
+              <div class="col-xl-2 col-lg-3 col-md-6 col-sm-5">
+                <h4 class="text-sm-start text-center">Important Links</h4>
+                <div class="footerLinks d-flex gap-3 justify-content-sm-start justify-content-center">
                   <div class="leftLinks pt-4">
                     <ul>
                       <li><a href="#">Home</a></li>
@@ -638,7 +651,7 @@
                       <li><a href="#">Blogs</a></li>
                     </ul>
                   </div>
-                  <div class="rightLinks pt-4">
+                  <div class="rightLinks pt-4 ms-sm-3 ms-5">
                     <ul>
                       <li><a href="#">Pricing</a></li>
                       <li><a href="#">Blog</a></li>
@@ -648,8 +661,8 @@
                 </div>
               </div>
 
-              <div class="col-4">
-                <h4>Flickr Photos</h4>
+              <div class="col-lg-4 mx-lg-auto mx-xl-none col-md-6 col-sm-7">
+                <h4 class="text-sm-start text-center">Flickr Photos</h4>
                 <div class="footerImages pt-4">
                   <div class="row">
                     <div class="col">
@@ -672,6 +685,10 @@
             </div>
           </div>
         </div>
+      </div>
+
+      <div class="copyrightArea row py-3">
+        <p class="text-center text-white">Copyright &copy; 2017. All rights reserved by <a class="copyrightText" href="#">BEATLS</a></p>
       </div>
     <!-- Footer Area End -->
 

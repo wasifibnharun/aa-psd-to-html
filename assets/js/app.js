@@ -17,11 +17,18 @@ var swiper = new Swiper(".mySwiper", {
         dynamicBullets: true,
     },
     spaceBetween: 24,
-    slidesPerView: 2,
     loop: true,
     autoplay: {
         delay: 5000,
         disableOnInteraction: false,
+    },
+    breakpoints: {
+        320: {
+            slidesPerView: 1,
+        },
+        576: {
+            slidesPerView: 2,
+        },
     },
   });
 
